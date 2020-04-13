@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+/* Main Design  */
+body {
+  font-family: 'Roboto', 'PingFang TC', sans-serif;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.header {
+  border-bottom: 2px solid #000;
+  padding: 24px 0;
+}
+
+.header h1 {
+  font-family: Andale Mono;
+  font-weight: Regular;
+  font-size: 80px;
+  line-height: 90px;
+}
+
+/* AVATAR */
+.avatar {
+  margin: 48px 0;
+}
+
+/* SECTION */
+.section {
+  margin-bottom: 72px;
+}
+.section:last-child {
+  margin-bottom: 0;
+  padding-top: 24px;
+}
+.section:last-child {
+  margin-bottom: 0;
+  padding-top: 24px;
+}
+
+.section-title {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 16px;
+}
+.section-title h2 {
+  /* font-family: 'PingFang TC'; */
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 45px;
+}
+.eng-title {
+  text-transform: uppercase;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 24px;
+  line-height: 45px;
+  vertical-align: middle;
+  color: #a00404;
+  margin-left: 5px;
+}
+.eng-title-white {
+  margin-left: 16px;
+  color: #fff;
+}
+
+.section-content {
+  padding-left: 46px;
+}
+
+.section-content ul.dot-list {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.section-content ul.line-list {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.section-content ul li {
+  margin-bottom: 12px;
+}
+
+/* PROFILE */
+
+ul.dot-list li::before {
+  content: '';
+  background-color: #96a9c4;
+  position: relative;
+  display: block;
+  top: 24px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+}
+
+ul.dot-list.with-connecting-line li:last-child:after {
+  content: '';
+  background-color: #96a9c4;
+  position: absolute;
+
+  top: 28px;
+  left: -24px;
+  width: 1px;
+  height: 55%;
+}
+
+ul.line-list {
+  position: relative;
+}
+
+ul.line-list.with-connecting-line li:last-child:after {
+  content: '';
+  background-color: #96a9c4;
+  position: absolute;
+
+  top: 0;
+  left: -24px;
+  width: 1px;
+  height: 100%;
+}
+
+.profile p {
+  font-family: 'PingFang TC';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+/* SKILLS */
+.skills {
+  position: relative;
+}
+
+.skills.section::before {
+  content: '';
+  background-color: #96a9c4;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  width: 1920px;
+  height: 360px;
+  top: 70px;
+  left: -360px;
+}
+.skills {
+  height: 500px;
+  width: 1200px;
+  background-color: #415165;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 24px;
+}
+
+.skills .section-title {
+  width: 1000px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 40px;
+}
+.skills .section-content {
+  padding-left: 24px;
+  position: relative;
+}
+.skills li {
+  font-weight: 300;
+}
+
+/* WORK */
+.work .section-content ul li {
+  margin-bottom: 32px;
+}
+
+.work li h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.work p {
+  font-size: 20px;
+  line-height: 30px;
+  width: 650px;
+}
+
+/* CONTACT */
+.contact {
+  position: relative;
+  color: #ffffff;
+}
+.contact::after {
+  content: '';
+  position: absolute;
+  background-color: #415165;
+  z-index: -1;
+  top: 0;
+  left: -360px;
+
+  min-width: 1920px;
+  height: 400px;
+}
+
+.contact .section-title {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.contact .contact-list li {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.contact .contact-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact .logo-list {
+  display: flex;
+  justify-content: center;
+}
+.contact .logo-list li {
+  margin-right: 24px;
+}
