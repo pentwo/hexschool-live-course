@@ -152,7 +152,7 @@ body {
 
 .header h1 {
   font-family: Andale Mono;
-  font-weight: Regular;
+  font-weight: 400;
   font-size: 80px;
   line-height: 90px;
 }
@@ -170,10 +170,6 @@ body {
   margin-bottom: 0;
   padding-top: 24px;
 }
-.section:last-child {
-  margin-bottom: 0;
-  padding-top: 24px;
-}
 
 .section-title {
   padding-bottom: 8px;
@@ -181,14 +177,12 @@ body {
   margin-bottom: 16px;
 }
 .section-title h2 {
-  /* font-family: 'PingFang TC'; */
   font-weight: 500;
   font-size: 32px;
   line-height: 45px;
 }
 .eng-title {
   text-transform: uppercase;
-  /* font-family: 'Roboto', sans-serif; */
   font-size: 24px;
   line-height: 45px;
   vertical-align: middle;
@@ -201,20 +195,14 @@ body {
 }
 
 .section-content {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
   padding-left: 46px;
 }
 
-.section-content ul.dot-list {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
-  margin-bottom: 24px;
-  position: relative;
-}
+.section-content ul.dot-list,
 .section-content ul.line-list {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
   margin-bottom: 24px;
   position: relative;
 }
@@ -261,13 +249,6 @@ ul.line-list.with-connecting-line li:last-child:after {
   left: -24px;
   width: 1px;
   height: 100%;
-}
-
-.profile p {
-  font-family: 'PingFang TC';
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 36px;
 }
 
 /* SKILLS */
@@ -333,6 +314,7 @@ ul.line-list.with-connecting-line li:last-child:after {
 .contact {
   position: relative;
   color: #ffffff;
+  text-align: center;
 }
 .contact::after {
   content: '';
@@ -347,15 +329,10 @@ ul.line-list.with-connecting-line li:last-child:after {
 }
 
 .contact .section-title {
-  text-align: center;
   border-bottom: 1px solid #fff;
 }
 
 .contact .contact-list li {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 300;
-  text-align: center;
   margin-bottom: 16px;
 }
 .contact .contact-list a {
