@@ -132,7 +132,6 @@ table {
 }
 
 /* IMPORTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
 /* Main Design  */
 body {
@@ -147,11 +146,11 @@ body {
 
 .header {
   border-bottom: 2px solid #000;
-  padding: 24px 0;
+  padding: 48px 0;
 }
 
 .header h1 {
-  font-family: Andale Mono;
+  font-family: Andale Mono, sans-serif;
   font-weight: 400;
   font-size: 80px;
   line-height: 90px;
@@ -171,6 +170,8 @@ body {
   padding-top: 24px;
 }
 
+/* SECTION -- TITLE */
+
 .section-title {
   padding-bottom: 8px;
   border-bottom: 1px solid #000;
@@ -180,52 +181,86 @@ body {
   font-weight: 500;
   font-size: 32px;
   line-height: 45px;
+  display: flex;
+  align-items: center;
 }
+
+.section-title-skills {
+  width: 1000px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+.section-title-skills h2 {
+  justify-content: center;
+}
+.section-title-contact {
+  border-bottom: 1px solid #fff;
+  margin-bottom: 32px;
+}
+.section-title-contact h2 {
+  justify-content: center;
+}
+
 .eng-title {
+  display: inline-block;
   text-transform: uppercase;
   font-size: 24px;
-  line-height: 45px;
+  line-height: 32px;
   vertical-align: middle;
   color: #a00404;
-  margin-left: 5px;
+  margin-left: 16px;
 }
 .eng-title-white {
   margin-left: 16px;
   color: #fff;
 }
 
+/* SECTION　-- CONTENT */
+
 .section-content {
   font-size: 24px;
   font-weight: 300;
-  line-height: 36px;
+  line-height: 1.5;
   padding-left: 46px;
-}
-
-.section-content ul.dot-list,
-.section-content ul.line-list {
-  margin-bottom: 24px;
   position: relative;
 }
 
-.section-content ul li {
-  margin-bottom: 12px;
+.section-content ul.dot-list {
+  position: relative;
+}
+.section-content ul.line-list {
+  margin-bottom: 56px;
+  position: relative;
+}
+.section-content ul.education-list {
+  margin-bottom: 32px;
+}
+.section-content ul.skill-list li {
+  line-height: 32px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 16px;
 }
 
-/* PROFILE */
+/* EDUCATION LIST */
 
-ul.dot-list li::before {
+.education-list li {
+  position: relative;
+}
+.education-list li p::before {
   content: '';
   background-color: #96a9c4;
-  position: relative;
-  display: block;
-  top: 24px;
+  position: absolute;
+
+  top: 12px;
   left: -32px;
   width: 16px;
   height: 16px;
   border-radius: 100%;
 }
 
-ul.dot-list.with-connecting-line li:last-child:after {
+.section-content ul.education-list::after {
   content: '';
   background-color: #96a9c4;
   position: absolute;
@@ -236,8 +271,17 @@ ul.dot-list.with-connecting-line li:last-child:after {
   height: 55%;
 }
 
-ul.line-list {
-  position: relative;
+/* DOT-LIST CIRCLE */
+ul.dot-list li::before {
+  content: '';
+  background-color: #96a9c4;
+  position: absolute;
+
+  top: 12px;
+  left: -32px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
 }
 
 ul.line-list.with-connecting-line li:last-child:after {
@@ -249,6 +293,16 @@ ul.line-list.with-connecting-line li:last-child:after {
   left: -24px;
   width: 1px;
   height: 100%;
+}
+
+/* PROFILE */
+
+.profile .section-content ul li {
+  margin-bottom: 24px;
+}
+/* EDUCATION */
+.education .section-content ul li {
+  margin-bottom: 32px;
 }
 
 /* SKILLS */
@@ -268,24 +322,15 @@ ul.line-list.with-connecting-line li:last-child:after {
   left: -360px;
 }
 .skills {
-  height: 500px;
   width: 1200px;
   background-color: #415165;
-
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-top: 24px;
 }
 
-.skills .section-title {
-  width: 1000px;
-  text-align: center;
-  border-bottom: 2px solid #fff;
-  margin-bottom: 40px;
-}
 .skills .section-content {
   padding-left: 24px;
   position: relative;
@@ -300,6 +345,7 @@ ul.line-list.with-connecting-line li:last-child:after {
 }
 
 .work li h3 {
+  font-size: 24px;
   font-weight: 500;
   margin-bottom: 8px;
 }
@@ -307,7 +353,11 @@ ul.line-list.with-connecting-line li:last-child:after {
 .work p {
   font-size: 20px;
   line-height: 30px;
-  width: 650px;
+  width: 642px;
+}
+
+.work li:last-child p {
+  width: 400px;
 }
 
 /* CONTACT */
@@ -316,6 +366,7 @@ ul.line-list.with-connecting-line li:last-child:after {
   color: #ffffff;
   text-align: center;
 }
+
 .contact::after {
   content: '';
   position: absolute;
@@ -326,10 +377,6 @@ ul.line-list.with-connecting-line li:last-child:after {
 
   min-width: 1920px;
   height: 400px;
-}
-
-.contact .section-title {
-  border-bottom: 1px solid #fff;
 }
 
 .contact .contact-list li {
