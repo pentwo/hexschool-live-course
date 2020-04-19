@@ -132,9 +132,6 @@ table {
 
 /* IMPORTS */
 /* BASIC CSS */
-* {
-  outline: 1px solid red;
-}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -159,7 +156,7 @@ h2 {
 /* HERO */
 .hero {
   width: 100vw;
-  /* height: 960px; */
+
   background: url(images/photo-1552393700-42696fb89bfa.png) no-repeat center
     center;
   background-size: cover;
