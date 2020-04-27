@@ -1,0 +1,464 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 以上 CSS RESET */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  /* CSS Variable */
+  --main-bg-color: #aa0601;
+  --main-font-color: #650300;
+  color: var(--main-font-color);
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+/* OUTLINE */
+* {
+  outline: 1px solid red;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+  color: #ffffff;
+  padding: 0 58px;
+}
+header h1 {
+  margin: 30px;
+}
+header h1 a img {
+  display: block;
+}
+
+header nav ul {
+  display: flex;
+  padding: 40px 30px;
+}
+header nav ul li ~ li {
+  margin-left: 64px;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 18px;
+  }
+  header h1 {
+  }
+  header nav ul li ~ li {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 375px) {
+  header nav {
+    display: none;
+  }
+  header h1 {
+    margin: 10px auto;
+  }
+}
+
+/* HERO */
+.hero {
+  background: url(images/68.png) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero-text {
+  text-align: right;
+  margin: 350px 360px;
+}
+.hero-text .title {
+  font-size: 64px;
+}
+.hero-text .subtitle {
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    margin: 350px 48px;
+  }
+  .hero-text .title {
+    font-size: 48px;
+  }
+  .hero-text .subtitle {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero-text {
+    margin: 165px 12px;
+  }
+  .hero-text .title {
+    font-size: 32px;
+  }
+  .hero-text .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* FEATURES */
+
+.features {
+  padding-bottom: 80px;
+  margin-bottom: 64px;
+  background-color: #aa06010d;
+}
+.features-text h2 {
+  margin-top: 64px;
+  margin-bottom: 44px;
+}
+.features-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px 37px 0;
+
+  max-width: 23.5%;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.card h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.card p {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .features-text h2 {
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .card {
+    max-width: 50%;
+    margin-bottom: 12px;
+  }
+}
+
+/* CLASSIC */
+.classic {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+}
+
+.classic h2 {
+  margin-bottom: 60px;
+}
+
+.classic-item {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.classic-item ~ .classic-item {
+  margin-top: 32px;
+}
+
+.flex-reverse {
+  flex-flow: row-reverse;
+}
+
+.classic-item .classic-img {
+  margin-right: 24px;
+}
+.flex-reverse .classic-img {
+  margin-right: 0;
+  margin-left: 24px;
+}
+
+.item-text .icon {
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+}
+
+.item-text {
+  display: flex;
+  align-items: center;
+}
+
+.item-text h3 {
+  color: var(--main-bg-color);
+  text-transform: uppercase;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .classic {
+    width: 672px;
+  }
+
+  .classic-item {
+    margin-bottom: 8px;
+  }
+  .flex-reverse {
+    flex-flow: row;
+  }
+
+  .classic-item .classic-img {
+    width: 60%;
+    margin: 0;
+  }
+  .flex-reverse .classic-img {
+    margin: 0;
+  }
+
+  .item-text {
+    width: 40%;
+    justify-content: center;
+  }
+
+  .item-text .icon {
+    width: 32px;
+    height: 32px;
+  }
+  .item-text h3 {
+    font-size: 28px;
+  }
+}
+
+/* DESIGNER */
+
+.designer {
+  background: url(images/nick-owuor-astro-nic-visuals-54Q_HvMWtVE-unsplash.png)
+    no-repeat center center;
+  background-size: cover;
+}
+.designer h2 {
+  color: #ffffff;
+  padding-top: 64px;
+  margin-bottom: 60px;
+}
+
+.designer-gallery {
+  max-width: 1540px;
+  margin: 0 auto;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 37.2% 8.6% 31.2% 1fr;
+  grid-template-rows: 54% 24.2% 1fr;
+}
+.designer-gallery .gallery-1 {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+img.gallery-1,
+img.gallery-2,
+img.gallery-3,
+img.gallery-4 {
+}
+
+.designer-gallery .gallery-2 {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+.designer-gallery .gallery-3 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.designer-gallery .gallery-4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.designer-gallery .btn-more {
+  grid-column: 4;
+  background: url(images/5.png) no-repeat left center;
+  padding-top: 26px;
+  padding-left: 26px;
+}
+.btn-more button {
+  border-width: 0;
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--main-bg-color);
+  padding: 5px 0px 5px 32px;
+}
+
+.designer-doublea {
+}
+.designer-youth {
+}
+
+@media (max-width: 768px) {
+}
