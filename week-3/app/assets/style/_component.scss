@@ -1,0 +1,81 @@
+.banner {
+  background: url(../images/72.png) no-repeat center center;
+  background-size: cover;
+  height: 304px;
+  padding-top: 214px;
+  .banner-text {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h2 {
+      font-size: 4rem;
+      color: #000;
+      margin-right: 10px;
+    }
+  }
+
+  @include tablet {
+    padding-top: 237px;
+    .banner-text {
+      max-width: 672px;
+      h2 {
+        font-size: 3rem;
+      }
+      img {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+  @include phone {
+    height: 143px;
+    padding-top: 103px;
+    .banner-text {
+      max-width: 352px;
+      h2 {
+        font-size: 1.75rem;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.pagination {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 156px;
+
+  ul {
+    display: flex;
+
+    max-width: 368px;
+    margin: 0 auto;
+    .page-item {
+      border: 1px solid #555555;
+      padding: 10px 14px;
+      text-align: center;
+      cursor: pointer;
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+    .page-item.active {
+      background-color: #000;
+      a {
+        color: #fff;
+      }
+      &hover {
+      }
+    }
+
+    .page-link {
+      text-decoration: none;
+      color: #555555;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.faq {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 88px;
+  margin-bottom: 156px;
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+    color: #000;
+    margin-bottom: 16px;
+  }
+  ul {
+    color: #000;
+  }
+  li h3 {
+    font-weight: 600;
+    padding: 22px 38px;
+    outline: 1px solid #000;
+    position: relative;
+    cursor: pointer;
+  }
+  li .panel {
+    outline: 1px solid #000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    padding: 0 38px;
+  }
+
+  .panel p {
+    margin: 22px 0;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .icon-arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%) rotate(-180deg);
+    transition: all 0.5s;
+  }
+  h3.open > .icon-arrow-down {
+    transform: translateY(-50%) rotate(0);
+  }
+  h3.open ~ .panel {
+    display: block;
+    transition: max-height 0.5s;
+  }
+
+  @include tablet {
+    max-width: 672px;
+    padding-top: 40px;
+    h2 {
+      font-size: 1.75em;
+      margin-bottom: 32px;
+    }
+    li h3 {
+    }
+    li p {
+      font-size: 0.875rem;
+    }
+    .icon-arrow-down {
+      right: 24px;
+    }
+  }
+  @include phone {
+    max-width: 352px;
+    padding-top: 24px;
+    h2 {
+      font-size: 1.25em;
+      margin-bottom: 16px;
+    }
+    li h3 {
+      // font-size: 1.5rem;
+      padding: 16px;
+    }
+    li p {
+      padding: 16px;
+      font-size: 0.875rem;
+    }
+    .icon-arrow-down {
+      right: 8px;
+    }
+  }
+}
