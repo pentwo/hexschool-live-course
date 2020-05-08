@@ -1078,11 +1078,12 @@ footer {
   }
 }
 
-/* HOVER EFFECT */
+/* BTN-MORE HOVER EFFECT */
 .btn-more p::before,
 .btn-more p::after {
   content: 'MORE';
   position: absolute;
+  opacity: 0;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(calc(-50% - 26px), -50%);

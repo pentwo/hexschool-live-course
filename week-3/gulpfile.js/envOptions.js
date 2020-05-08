@@ -1,3 +1,6 @@
+const srcPath = './app';
+const distPath = './dist';
+
 let envOptions = {
   string: 'env',
   default: {
@@ -5,26 +8,31 @@ let envOptions = {
   },
   conyFile: {
     src: [
-      './app/**/*',
-      '!app/assets/style/**/*.scss',
-      '!app/**/*.ejs',
-      '!app/**/*.html',
+      `${srcPath}/**/*`,
+      `!${srcPath}/assets/style/**/*.scss`,
+      `!${srcPath}/assets/style/**/*.sass`,
+      `!${srcPath}/**/*.ejs`,
+      `!${srcPath}/**/*.html`,
     ],
-    path: './dist/',
+    path: distPath,
   },
   html: {
-    src: ['./app/**/*.ejs', './app/**/*.html'],
-    path: './dist/',
+    src: [`${srcPath}/**/*.html`],
+    ejsSrc: [`${srcPath}/**/*.ejs`],
+    path: distPath,
   },
   style: {
-    src: ['./app/assets/style/**/*.scss'],
-    path: './dist/assets/style',
+    src: [
+      `${srcPath}/assets/style/**/*.scss`,
+      `${srcPath}/assets/style/**/*.sass`,
+    ],
+    path: `${distPath}/assets/style`,
   },
   clean: {
-    src: './dist',
+    src: distPath,
   },
-  browserDir: './dist',
-  deploySrc: './dist/**/*',
+  browserDir: distPath,
+  deploySrc: `${distPath}/**/*`,
 };
 
 exports.envOptions = envOptions;
