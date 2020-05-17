@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>系列鏡架 - Glasses</title>
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="burger">
+          <img src="assets/images/ic_menu.svg" alt="" />
+        </div>
+        <h1>
+          <a href="index.html"><img src="assets/images/logo-new.png" alt="logo" /></a>
+        </h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="stores.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+<section class="series">
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
+<section class="gallery">
+  <ul>
+    <li></li>
+    <li></li>
+  </ul>
+</section>
+
+      <footer>
+        <div class="footer-top">
+          <ul class="nav">
+            <li><a href="index.html"">首頁</a></li>
+            <li><a href="#">系列鏡框</a></li>
+            <li><a href="stores.html">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="faq.html">常見問題</a></li>
+          </ul>
+          <ul class="socialIcons">
+            <li>
+              <a href="#"
+                ><img src="assets/images/ic_social_fb.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/ic_social_ig.svg" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="assets/images/ic_social_line.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-meddle">
+          <a href="tel:+8860800000000">
+            <img
+              src="assets/images/ic_phone.svg"
+              alt="icon"
+              class="icon-phone"
+            />
+            0800-000-000</a
+          >
+          <a href="mailto:glasses@business.com">
+            <img src="assets/images/ic_mail.svg" alt="icon" class="icon-mail" />
+            glasses@business.com
+          </a>
+        </div>
+        <div class="footer-bottom">
+          <div class="left">
+            <a href="index.html">
+              <img src="assets/images/logo-new.png" alt="" class="icon-logo" />
+            </a>
+            <p>Copyright © 2020 Glasses.All rights reserved.</p>
+          </div>
+          <div class="right">
+            <a href="#">隱私權政策</a>
+            <a href="#">服務條款</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const menu = document.querySelector('.burger');
+      const nav = document.querySelector('.main-nav');
+
+      menu.addEventListener('click', function () {
+        nav.classList.toggle('active');
+      });
+
+      var items = document.getElementsByClassName('collapsible');
+
+      for (i = 0; i < items.length; i++) {
+        items[i].addEventListener('click', function () {
+          this.classList.toggle('open');
+          var sibEle = this.nextElementSibling;
+          if (sibEle.style.maxHeight) {
+            sibEle.style.maxHeight = null;
+          } else {
+            console.log(sibEle.scrollHeight);
+            var targetHeight = sibEle.scrollHeight + 38;
+            sibEle.style.maxHeight = `${targetHeight}px`;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
