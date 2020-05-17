@@ -2,7 +2,7 @@
 
 Course assignments for HexSchool Web Layout Training
 
-# #Week 1 Resume
+## Week 1 Resume
 Design: https://xd.adobe.com/view/3b004539-6382-47f6-51e9-f3b73ea5063e-4d31/
 Result: https://pentwo.github.io/hexschool-live-course/week-1/
 
