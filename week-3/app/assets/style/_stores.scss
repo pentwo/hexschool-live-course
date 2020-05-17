@@ -1,0 +1,160 @@
+.selector {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 16px;
+  margin-bottom: 32px;
+
+  label {
+    color: #000;
+    font-size: 1.5rem;
+    margin-right: 22px;
+  }
+  select {
+    display: none;
+    label {
+      font-size: 1rem;
+    }
+  }
+
+  @include tablet {
+    padding-top: 20px;
+    max-width: 672px;
+  }
+  @include phone {
+    padding-top: 8px;
+    max-width: 352px;
+    margin-bottom: 20px;
+    label {
+      font-size: 0.875rem;
+    }
+  }
+}
+.stores {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 88px;
+
+  .storeCard {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+
+    color: #212529;
+    margin-bottom: 24px;
+    img {
+      object-fit: cover;
+    }
+    h3 {
+      padding: 16px 24px;
+      font-size: 1.5rem;
+      border: 1px solid #00000020;
+    }
+
+    ul {
+      border: 1px solid #00000020;
+      padding: 16px 36px;
+    }
+    ul li {
+      font-size: 1.25rem;
+      font-weight: 400;
+      position: relative;
+    }
+    li ~ li {
+      margin-top: 8px;
+    }
+    li p {
+      padding-left: 33px;
+    }
+
+    .icon {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+
+      object-fit: scale-down;
+
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    .info {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #ffffff;
+      background: #000000;
+      border: 1px solid #00000020;
+    }
+  }
+  @include tablet {
+    max-width: 672px;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    .storeCard {
+      width: 48.2%;
+
+      img {
+        height: 164px;
+      }
+      h3 {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+      ul {
+        border: 1px solid #00000020;
+        padding: 16px;
+      }
+      ul li {
+        font-size: 0.875rem;
+      }
+      li p {
+        padding-left: 24px;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+      .info {
+        font-size: 0.875rem;
+      }
+    }
+  }
+  @include phone {
+    max-width: 352px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    .storeCard {
+      width: 100%;
+
+      img {
+        height: 164px;
+      }
+      h3 {
+        font-size: 1rem;
+        padding: 8px 16px;
+      }
+      ul {
+        border: 1px solid #00000020;
+        padding: 16px;
+      }
+      ul li {
+        font-size: 0.875rem;
+      }
+      li p {
+        padding-left: 24px;
+      }
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+      .info {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
