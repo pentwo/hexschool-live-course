@@ -1,0 +1,138 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: $primary-fn-color;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  width: 1280px;
+  // height: 100vh;
+  margin: 0 auto;
+  justify-content: center;
+
+  position: relative;
+}
+
+.primary {
+  color: $primary-color;
+}
+.warning {
+  color: $warning;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.material-icons {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+// .mr-2 {
+//   margin-right: 1rem;
+// }
+
+// .mr-3 {
+//   margin-right: 1.5rem;
+// }
+
+// .mr-4 {
+//   margin-right: 2rem;
+// }
+
+// Button Design
+.btn {
+  background: #fff;
+  font-size: 1rem;
+  padding: 8px 32px;
+  border-radius: 2px;
+  & ~ .btn {
+    margin-left: 16px;
+  }
+  &.disabled {
+    border: 1px solid $primary-bd-color;
+    color: $primary-bd-color;
+  }
+  &.btn-primary {
+    background-color: $primary-color;
+    border: 0;
+    color: #fff;
+  }
+  &.btn-secondary {
+    color: $primary-color;
+    border: 1px solid $primary-bd-color;
+  }
+  &.btn-warning {
+    border: 1px solid $warning;
+    color: $warning;
+  }
+  &.btn-warning:hover {
+    color: #ffffff;
+  }
+
+  &.btn-fluid {
+    width: 100%;
+    padding: 16px 0;
+  }
+}
+
+// Checkbox Design
+input[type='text'],
+input[type='email'] {
+  display: block;
+  width: 100%;
+  padding: 16px;
+}
+label.label-checkbox {
+  position: relative;
+
+  input[type='checkbox'] {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  input[type='checkbox'] + .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #000;
+    border-radius: 3px;
+  }
+  input[type='checkbox']:checked + .checkmark {
+    background-color: $primary-color;
+    border: 2px solid $primary-bd-color;
+  }
+  .label-text {
+    line-height: 24px;
+    margin-left: 0.5rem;
+  }
+}

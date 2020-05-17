@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <h1>
+          <a href="index.html"
+            ><img src="./assets/images/logo-ANSWER.svg" alt="" class="logo"
+          /></a>
+        </h1>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#">
+              <i class="material-icons"> insert_chart </i>Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i class="material-icons"> forum </i>Question </a>
+          </li>
+          <li>
+            <a href="assignment.html">
+              <i class="material-icons"> assignment </i>Assignment
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="material-icons"> library_music </i>Course
+            </a>
+          </li>
+          <li>
+            <a href="admin.html">
+              <i class="material-icons"> supervisor_account </i>Admin
+            </a>
+          </li>
+          <li>
+            <a href="#"> <i class="material-icons"> settings </i>Settings </a>
+          </li>
+        </ul>
+        <div class="login">
+          <div class="login-avatar">
+            <img
+              src="assets/images/avatar-andy-chen.jpg"
+              alt=""
+              class="avatar"
+            />
+          </div>
+          <div class="login-detail">
+            <p class="detail-name">Andy Chen</p>
+            <p class="detail-email">andy0401@mail.com</p>
+          </div>
+        </div>
+      </div>
+      
+<div class="admin">
+  <section class="admin-header content-header">
+    <h2>Admin</h2>
+    <i class="material-icons primary ml-5">add</i>
+    <span class="ml-2">
+      Add New Admin
+    </span>
+    <div class="option-func">
+      <i class="material-icons align-middle mr-3">search</i>
+      <i class="material-icons align-middle">notifications_active</i>
+    </div>
+  </section>
+
+  <section class="admin-table">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">
+            ID<i class="material-icons md-12">
+              arrow_downward
+            </i>
+          </th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Verified</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="mr-2">#1</th>
+          <td>Emir Wicks</td>
+          <td>emir.wicks＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" ata-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i>
+            </a>
+
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#2</th>
+          <td>Zaina Goldsmith</td>
+          <td>zaina.goldsmith＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#3</th>
+          <td>Mahima Lopez</td>
+          <td>mahima.lopez＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#4</th>
+          <td>Pharrell Murray</td>
+          <td>pharrell.murray＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#5</th>
+          <td>Annika Mcbride</td>
+          <td>annika.mcbride＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#6</th>
+          <td>Fatimah Clark</td>
+          <td>fatimah.clark＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#7</th>
+          <td>Klaudia Rhodes</td>
+          <td>klaudia.rhodes＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#8</th>
+          <td>Tillie Lucero</td>
+          <td>tillie.lucero＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#9</th>
+          <td>Sabrina Stephenson</td>
+          <td>sabrina.stephenson＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i></a
+            >
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">#10</th>
+          <td>Annie Smith</td>
+          <td>annie.smith＠mail.com</td>
+          <td>Yes</td>
+          <td>
+            <a data-toggle="modal" data-target="#viewAdminModal">
+              <i class="material-icons mr-3">remove_red_eye</i>
+            </a>
+            <a data-toggle="modal" data-target="#editAdminModal">
+              <i class="material-icons">edit</i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="pagination mt-5 justify-content-end">
+    <ul class="list-unstyled">
+      <li class="page-item">
+        <a class="page-link" href="#">
+          <
+          <!-- <i class="material-icons">chevron_left</i> -->
+        </a>
+      </li>
+      <li class="page-item">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item active">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">
+          >
+          <!-- <i class="material-icons">chevron_right</i> -->
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <div class="modal fade modal-edit" id="editAdminModal" role="dialog">
+    <div class="modal-dialog modal-dialog-scrollable" role="edit admin">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Edit Admin</h3>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="admin-account">
+            <h3>Account</h3>
+            <label for="acc-name">Name</label>
+            <input type="text" id="acc-name" />
+            <label for="acc-email">Email</label>
+            <input type="email" id="acc-email" />
+          </section>
+          <section class="admin-verification">
+            <h3>Verification</h3>
+            <div class="row mx-0">
+              <i class="material-icons primary">check_circle</i>
+              <span class="bold">Verified</span>
+              <time>2020/4/12</time>
+            </div>
+            <button class="btn disabled btn-fluid">
+              Send Verification Mail
+            </button>
+          </section>
+          <section class="admin-access">
+            <h3>Access Level</h3>
+            <div class="input-group">
+              <select class="custom-select">
+                <option value="admin">Admin</option>
+                <option value="manager">Manager</option>
+                <option value="user">User</option>
+                <option value="intern">Intern</option>
+              </select>
+            </div>
+          </section>
+          <section class="admin-custom">
+            <h3>Custom Access</h3>
+            <div class="custom-control custom-checkbox mx-0">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="lecture"
+              />
+              <label class="custom-control-label" for="lecture">
+                Lecture
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox mx-0">
+              <input type="checkbox" class="custom-control-input" id="coupon" />
+              <label class="custom-control-label" for="coupon">
+                Coupon
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox mx-0">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="message"
+              />
+              <label class="custom-control-label" for="message">
+                Message
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox mx-0">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="setting"
+              />
+              <label class="custom-control-label" for="setting">
+                Setting
+              </label>
+            </div>
+            <div class="custom-control custom-checkbox mx-0">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="taskMenu"
+              />
+              <label class="custom-control-label" for="taskMenu">
+                Task Menu
+              </label>
+            </div>
+          </section>
+          <section class="admin-deactivate">
+            <h3>Deactivate Account</h3>
+            <div class="row">
+              <div class="col">
+                <div class="d-flex align-items-center warning">
+                  <i class="material-icons">warning</i>
+                  <span>This cannot be undone!</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-warning btn-fluid">
+              Deactivate This Account
+            </button>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary">Cancel</button>
+          <button class="btn btn-primary">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade modal-view" id="viewAdminModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="material-icons ic-clear" id="modalClose">clear</i>
+          </button>
+          <div class="d-flex">
+            <div class="view-avatar">
+              <img
+                src="./assets/images/avatar-emir-wicks.png"
+                class="avatar img-fluid"
+              />
+            </div>
+
+            <div class="view-text ml-4">
+              <ph scope="row" class="id">#1</ph>
+              <p class="role">Admin</p>
+              <h3 class="name">Emir Wicks</h3>
+              <p class="email">emir.wicks@mail.com</p>
+              <span class="tag">Verified</span>
+              <a
+                data-toggle="collapse"
+                data-target="#viewCollapse"
+                id="viewCollapseIcon"
+                onclick="rotate180()"
+              >
+                <i class="material-icons ic-arrow-down primary"
+                  >keyboard_arrow_down</i
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer collapse" id="viewCollapse">
+          <button class="btn btn-warning">Deactivate</button>
+          <button class="btn btn-primary">Edit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const rotate180 = () => {
+    const viewCollapse = document.getElementById('viewCollapseIcon');
+    console.log(
+      'viewCollapse: ',
+      viewCollapse.firstElementChild.classList.toggle('rotate180'),
+    );
+  };
+</script>
+
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
