@@ -8269,6 +8269,9 @@ h2 {
 h3 {
   font-size: 1.25rem; }
 
+p {
+  margin: 0; }
+
 .btn {
   background: #fff;
   font-size: 1rem;
@@ -8410,9 +8413,14 @@ label.label-checkbox {
     width: 296px;
     display: flex;
     flex-direction: column; }
-  .menu ul li:hover {
-    border-left: 4px solid #2a8356;
-    transform: translateX(-4px); }
+  .menu ul li:hover a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #2a8356; }
   .menu ul li a {
     display: flex;
     align-items: center;
@@ -8424,15 +8432,6 @@ label.label-checkbox {
     .menu ul li a .material-icons {
       margin-right: 16px;
       vertical-align: middle; }
-    .menu ul li a.active {
-      color: #2a8356; }
-    .menu ul li a.active:before {
-      content: '';
-      position: absolute;
-      width: 4px;
-      height: 100%;
-      left: 0;
-      background-color: #2a8356; }
     .menu ul li a:hover {
       color: #2a8356; }
   .menu ul li ~ li {
