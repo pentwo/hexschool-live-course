@@ -1,0 +1,38 @@
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.material-icons {
+  vertical-align: middle;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: $gray-300;
+}
+
+.super {
+  font-size: 0.75rem;
+  vertical-align: super;
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}

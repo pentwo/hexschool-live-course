@@ -1,0 +1,152 @@
+.jumbotron-fluid {
+  height: 800px;
+  background-color: transparent;
+}
+.jumbotron-fluid:after {
+  // content: '';
+  position: absolute;
+  width: 50%;
+  // height: 100%;
+  max-height: 800px;
+  bottom: 0;
+  right: 0;
+  background: url(../images/tom-crew-5HRCkrSs9Dk-unsplash.jpg) no-repeat center
+    center;
+  background-size: cover;
+  z-index: -1;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+.jumbotron-img {
+  position: absolute;
+  height: 800px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/tom-crew-5HRCkrSs9Dk-unsplash.jpg) no-repeat center
+    center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.jumbotron-text {
+  margin: 16rem 0;
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    color: #0000009a;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 11.75rem;
+    text-align: center;
+    h1 {
+      color: #fff;
+    }
+    p {
+      color: #ffffff99;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.features {
+  margin-bottom: 4.5rem;
+  .media {
+    .media-body {
+      h4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1.5rem;
+        color: $gray-666;
+      }
+      a {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.artist {
+  background: url(../images/burningparrot-u2Xn5Bzvllw-unsplash.jpg) no-repeat
+    center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+
+  .blockquote {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $white;
+  }
+  .detail {
+    p {
+      color: #ffffff99;
+    }
+    h4 {
+      text-transform: capitalize;
+      color: $white;
+    }
+  }
+}
+
+.products {
+  .swiper-container {
+    .card {
+      border: 0;
+      img {
+        // width: 350px;
+        height: 240px;
+        object-fit: cover;
+        @include media-breakpoint-up(md) {
+          height: 350px;
+        }
+      }
+
+      .on-sale {
+        position: absolute;
+        font-size: 0.875rem;
+        color: #ffffff;
+        top: 16px;
+        right: 16px;
+      }
+    }
+    .card-body {
+      padding: 0;
+
+      h5 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}
+
+.subscribe {
+  height: 400px;
+  padding-top: 5.25rem;
+  background: url(../images/tom-crew-uDF1mW7EUwM-unsplash.jpg) no-repeat center
+    center;
+  background-size: cover;
+  h3 {
+    // font-size: 3rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 3rem;
+  }
+  input[type='email'] {
+    background-color: transparent;
+  }
+  .input-group {
+  }
+}
