@@ -7299,6 +7299,21 @@ body {
     visibility: hidden;
     background-color: #fff;
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out; }
+    .navbar-overlay button.navbar-toggler {
+      margin-bottom: 2rem; }
+    .navbar-overlay .navbar-nav {
+      width: 100%; }
+    .navbar-overlay .nav-item {
+      position: relative; }
+    .navbar-overlay .btn-collapse {
+      position: absolute;
+      top: 1rem;
+      right: 0; }
+    .navbar-overlay .subNav {
+      border-bottom: 1px solid #000;
+      color: #666666; }
+      .navbar-overlay .subNav li ~ li {
+        margin-top: 1rem; }
     .navbar-overlay .nav-link {
       color: #000;
       font-size: 1.5rem;
@@ -7319,7 +7334,8 @@ body {
 
 footer {
   background-color: #121212;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
   footer h2 {
     font-family: 'Raleway', sans-serif;
     font-style: italic;
@@ -7327,11 +7343,24 @@ footer {
   footer .copyrights {
     font-size: 0.875rem;
     color: #adb5bd; }
+    @media (max-width: 768px) {
+      footer .copyrights {
+        position: absolute;
+        bottom: -12rem;
+        left: 0; } }
   footer ul {
     margin: 0;
     justify-content: flex-end; }
+    @media (max-width: 768px) {
+      footer ul {
+        margin-bottom: 2.5rem; } }
     footer ul li ~ li {
+      margin-top: 0;
       margin-left: 3rem; }
+      @media (max-width: 768px) {
+        footer ul li ~ li {
+          margin-top: 1rem;
+          margin-left: 0; } }
     footer ul a {
       color: #fff; }
 
@@ -7361,6 +7390,9 @@ footer {
   background: url(../images/tom-crew-5HRCkrSs9Dk-unsplash.jpg) no-repeat center center;
   background-size: cover;
   z-index: -1; }
+  @media (max-width: 768px) {
+    .jumbotron-img {
+      height: 640px; } }
 
 .jumbotron-text {
   margin: 16rem 0; }
@@ -7372,7 +7404,7 @@ footer {
     font-size: 1rem; }
   @media (max-width: 768px) {
     .jumbotron-text {
-      margin-top: 11.75rem;
+      margin: 8rem 0;
       text-align: center; }
       .jumbotron-text h1 {
         color: #fff; }
