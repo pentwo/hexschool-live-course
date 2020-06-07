@@ -62,20 +62,10 @@
 }
 
 .features {
-  margin-bottom: 4.5rem;
-  .media {
-    .media-body {
-      h4 {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-      p {
-        margin-bottom: 1.5rem;
-        color: $gray-666;
-      }
-      a {
-        text-transform: capitalize;
-      }
+  // margin-bottom: 4.5rem;
+  .media-body {
+    p {
+      color: $gray-666;
     }
   }
 }
@@ -90,66 +80,5 @@
   .blockquote {
     font-size: 2rem;
     font-weight: 700;
-    color: $white;
-  }
-  .detail {
-    p {
-      color: #ffffff99;
-    }
-    h4 {
-      text-transform: capitalize;
-      color: $white;
-    }
-  }
-}
-
-.products {
-  .swiper-container {
-    .card {
-      border: 0;
-      img {
-        // width: 350px;
-        height: 240px;
-        object-fit: cover;
-        @include media-breakpoint-up(md) {
-          height: 350px;
-        }
-      }
-
-      .on-sale {
-        position: absolute;
-        font-size: 0.875rem;
-        color: #ffffff;
-        top: 16px;
-        right: 16px;
-      }
-    }
-    .card-body {
-      padding: 0;
-
-      h5 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.25rem;
-      }
-    }
-  }
-}
-
-.subscribe {
-  height: 400px;
-  padding-top: 5.25rem;
-  background: url(../images/tom-crew-uDF1mW7EUwM-unsplash.jpg) no-repeat center
-    center;
-  background-size: cover;
-  h3 {
-    // font-size: 3rem;
-    font-weight: 700;
-    color: $white;
-    margin-bottom: 3rem;
-  }
-  input[type='email'] {
-    background-color: transparent;
-  }
-  .input-group {
   }
 }

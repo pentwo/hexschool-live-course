@@ -26,8 +26,16 @@ body {
 }
 
 .super {
-  font-size: 0.75rem;
+  font-size: 0.5em;
   vertical-align: super;
+}
+
+.on-sale {
+  position: absolute;
+  font-size: 0.875rem;
+  color: #ffffff;
+  top: 16px;
+  right: 16px;
 }
 
 [data-aos] {
@@ -35,4 +43,17 @@ body {
 }
 [data-aos].animate__animated {
   visibility: visible;
+}
+
+.h3 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  @include media-breakpoint-up(md) {
+    font-size: 3rem;
+  }
+}
+
+.h4 {
+  font-size: 1.5rem;
 }

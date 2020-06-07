@@ -1,75 +1,94 @@
-.navbar-brand {
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  color: $black;
-  @media (max-width: 768px) {
-    color: #ffffff;
-  }
-}
-.nav-link {
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .navbar-overlay {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 100%;
-    z-index: 10;
-
-    visibility: hidden;
-
-    background-color: #fff;
-    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-    button.navbar-toggler {
-      margin-bottom: 2rem;
+.navbar {
+  .navbar-brand {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    color: $white;
+    @include media-breakpoint-up(md) {
+      color: $black;
     }
+  }
+  .nav-link {
+    color: $white;
+    @include media-breakpoint-up(md) {
+      color: $black;
+    }
+  }
 
-    .navbar-nav {
+  @include media-breakpoint-down(md) {
+    .navbar-overlay {
+      position: fixed;
       width: 100%;
-    }
-    .nav-item {
-      position: relative;
-    }
-    .btn-collapse {
-      position: absolute;
-      top: 1rem;
-      right: 0;
-    }
-    .subNav {
-      border-bottom: 1px solid #000;
-      color: $gray-666;
-      li ~ li {
-        margin-top: 1rem;
+      top: 0;
+      bottom: 0;
+      right: 100%;
+      z-index: 10;
+
+      visibility: hidden;
+
+      background-color: #fff;
+      transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+      button.navbar-toggler {
+        margin-bottom: 2rem;
       }
-    }
 
-    .nav-link {
-      color: #000;
-      font-size: 1.5rem;
-      border-bottom: 1px solid #000;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-    }
+      .navbar-nav {
+        width: 100%;
+      }
+      .nav-item {
+        position: relative;
+      }
+      .btn-collapse {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+      }
+      .subNav {
+        border-bottom: 1px solid #000;
+        color: $gray-666;
+        li ~ li {
+          margin-top: 1rem;
+        }
+      }
 
-    .shoppingCart {
-      position: absolute;
-      right: 15px;
-      top: 0.5rem;
       .nav-link {
-        padding: 0;
         color: #000;
-        border: 0;
+        font-size: 1.5rem;
+        border-bottom: 1px solid #000;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
       }
+
+      .shoppingCart {
+        position: absolute;
+        right: 15px;
+        top: 0.5rem;
+        .nav-link {
+          padding: 0;
+          color: #000;
+          border: 0;
+        }
+      }
+    }
+    .navbar-overlay.show {
+      visibility: visible;
+      transform: translateX(100%);
     }
   }
-  .navbar-overlay.show {
-    visibility: visible;
-    transform: translateX(100%);
+}
+
+.subscribe {
+  height: 400px;
+  padding-top: 5.25rem;
+  background: url(../images/tom-crew-uDF1mW7EUwM-unsplash.jpg) no-repeat center
+    center;
+  background-size: cover;
+
+  input[type='email'] {
+    background-color: transparent;
+  }
+  .input-group {
   }
 }
 

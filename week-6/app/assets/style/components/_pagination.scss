@@ -1,0 +1,10 @@
+nav .pagination {
+  font-size: 1.5rem;
+
+  li.active a {
+    text-decoration: underline;
+  }
+  li ~ li {
+    margin-left: 0.5rem;
+  }
+}

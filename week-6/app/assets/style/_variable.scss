@@ -71,6 +71,7 @@ $colors: map-merge(
     'teal': $teal,
     'cyan': $cyan,
     'white': $white,
+    'gray-light': $gray-600,
     'gray': $gray-600,
     'gray-dark': $gray-800,
     'forestgreen': $forestgreen,
@@ -84,7 +85,7 @@ $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
 $danger: $red !default;
-$light: $gray-100 !default;
+$light: $gray-300 !default;
 $dark: $gray-800 !default;
 
 $theme-colors: () !default;
@@ -164,6 +165,9 @@ $spacers: map-merge(
     ),
     5: (
       $spacer * 3,
+    ),
+    6: (
+      $spacer * 4.5,
     ),
   ),
   $spacers
@@ -1178,3 +1182,17 @@ $user-selects: all, auto, none !default;
 
 $print-page-size: a3 !default;
 $print-body-min-width: map-get($grid-breakpoints, 'lg') !default;
+
+// Custom Variable
+$pagination-color: $black;
+// $pagination-bg: $white !default;
+$pagination-border-width: 0;
+// $pagination-border-color: $gray-300 !default;
+
+$pagination-hover-color: $link-hover-color;
+$pagination-hover-bg: 0;
+// $pagination-hover-border-color: $gray-300 !default;
+
+$pagination-active-color: $primary;
+$pagination-active-bg: $white;
+// $pagination-active-border-color: $pagination-active-bg !default;

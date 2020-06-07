@@ -3,6 +3,10 @@
 @import '../../../node_modules/bootstrap/scss/mixins';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
+@import './components/card';
+@import './components/pagination';
+
 @import 'base'; // 全站設定
 @import 'layout';
 @import 'index';
+@import 'product';
