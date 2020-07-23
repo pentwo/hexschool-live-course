@@ -15,7 +15,7 @@ Result https://pentwo.github.io/hexschool-live-course/week-2/index.html
 ## Week 3 & 4 RWD Web design
 Design https://xd.adobe.com/view/8e014262-a911-458f-7b23-71a7fe4819c6-f830/
 
-Result https://pentwo.github.io/hexschool-live-course/week-3/dist/admin.html
+Result https://pentwo.github.io/hexschool-live-course/week-3/dist/index.html
 
 ## Week 5 Back-end Dashboard
 Design https://xd.adobe.com/view/bd869667-ead5-4620-4329-ee0709cfef9e-cbb7/
