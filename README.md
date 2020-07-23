@@ -20,7 +20,7 @@ Result https://pentwo.github.io/hexschool-live-course/week-3/
 ## Week 5 Back-end Dashboard
 Design https://xd.adobe.com/view/bd869667-ead5-4620-4329-ee0709cfef9e-cbb7/
 
-Result https://pentwo.github.io/hexschool-live-course/week-5/dist/index.html
+Result https://pentwo.github.io/hexschool-live-course/week-5/dist/admin.html
 
 ## Week 6 E-Commerce
 Design https://xd.adobe.com/view/b251d34b-5ec0-4978-7793-0fd19c2eaad1-c460/
